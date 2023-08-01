@@ -1,0 +1,22 @@
+.nav-bg {
+  background: #AA0601;
+}
+.nav{
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 80px;
+    height: 48px;
+  }
+  ul {
+    display: flex;
+    margin: 0 -16px;
+    padding: 25px 0;
+    li {
+      padding: 0 16px;
+    }
+  }
+}

@@ -1,5 +1,20 @@
-@import './layout/header.scss';
+@import './layout/nav.scss';
 @import './layout/footer.scss';
 
+@import './pages/_reset.scss';
+@import './pages/_index.scss';
 
-@import './pages/index.scss';
+body {
+    line-height: 1.5;
+    img {
+        display: block;
+    }
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.container {
+    width: 1296px;
+    margin: 0 auto;
+    a {
+        text-decoration: none;
+    }
+}
