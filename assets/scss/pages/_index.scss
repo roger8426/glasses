@@ -1,3 +1,8 @@
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
 .slogan-bg {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
   width: 100%;
@@ -28,7 +33,7 @@
     font-weight: bolder;
   }
 
-  p {
+  a {
     font-size: 20px;
     background: #AA0601;
     color: white;
@@ -63,7 +68,7 @@ h2 {
     justify-content: space-between;
 
     li {
-      width: 306px;
+      width: 24%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -97,14 +102,18 @@ h2 {
     margin-bottom: 48px;
   }
 
-  img {
-    height: 416px;
-    width: 416px;
-  }
-
   ul {
     display: flex;
     justify-content: space-between;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    li {
+      width: 32%;
+    }
 
     p {
       font-size: 48px;
@@ -125,27 +134,30 @@ h2 {
     color: white;
   }
 
-  .brand-img {
-    display: flex;
-    height: 240px;
-
-    img {
-      width: 50%;
-      height: 100%;
-    }
-  }
-
   .brand {
     display: flex;
-    background: white;
+  }
+
+  .brand-box {
+
+    img {
+      width: 100%;
+      height: auto;
+    }
 
     p {
-      width: 50%;
+      width: 100%;
       text-align: center;
       font-size: 48px;
       color: #AA0601;
       font-style: italic;
+      padding: 8px 0;
+      background: white;
     }
+  }
+
+  img:nth-child(2) {
+    display: none;
   }
 }
 
@@ -153,8 +165,8 @@ h2 {
   padding: 80px 0;
 
   img {
-    height: 306px;
     width: 100%;
+    height: auto;
   }
 
   ul {
@@ -190,13 +202,15 @@ h2 {
 .contact-bg {
   background: #FBF2F2;
   padding: 80px 0;
+}
+
+.contact {
+  width: 50%;
+  margin: 0 auto;
+
 
   h2 {
     color: #650300;
-  }
-
-  .contact {
-    width: 636px;
   }
 
   p {
@@ -204,24 +218,176 @@ h2 {
   }
 
   input {
+    margin-top: 8px;
     margin-bottom: 16px;
+    padding: 0;
     width: 100%;
+    font-size: 24px;
     background: #FBF2F2;
   }
 
   .checkbox {
     width: 13px;
+    margin-top: 0;
+  }
+}
+
+.submit {
+  width: 65%;
+  margin: 0 auto;
+
+  input {
+    margin-top: 32px;
+    padding: 16px 0;
+    background: #AA0601;
+    color: white;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    margin: 0 36px;
   }
 
-  .submit {
-    width: 416px;
-    margin: 0 auto;
+  .service ul {
+    flex-wrap: wrap;
 
-    input {
-      margin-top: 32px;
-      padding: 16px 0;
-      background: #AA0601;
-      color: white;
+    li {
+      width: 49%;
+    }
+  }
+
+  .classic {
+    ul {
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        width: 50%;
+      }
+
+      li:nth-child(2) {
+        margin: 24px 0;
+      }
+    }
+  }
+
+  .co-branding {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+
+    .brand {
+      display: block;
+    }
+
+    .brand-box {
+      width: 100%;
+    }
+
+    .brand-box:nth-child(1) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .recommend {
+    padding-bottom: 56px;
+
+    ul {
+      flex-wrap: wrap;
+
+      li {
+        width: 49%;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .contact {
+    width: 83%;
+  }
+}
+
+@media(max-width: 375px) {
+  .container {
+    margin: 0 14px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .slogan-bg {
+    height: 396px;
+
+    h3 {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  .service-bg {
+    padding: 40px 0;
+  }
+
+  .service {
+    h2 {
+      margin-bottom: 32px;
+    }
+
+    ul {
+      li {
+        width: 100%;
+      }
+
+      img {
+        margin-top: 0;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .classic {
+    padding: 40px 0;
+
+    ul {
+      li {
+        width: 100%;
+      }
+    }
+  }
+
+  .co-branding {
+    padding: 40px 0;
+
+    img {
+      display: none;
+    }
+
+    img:nth-child(2) {
+      display: block;
+    }
+  }
+
+  .recommend {
+    padding: 40px 0;
+
+    ul li {
+      width: 100%;
+    }
+  }
+
+  .contact-bg {
+    padding: 40px 0;
+
+    .contact {
+      width: 100%;
+    }
+
+    .submit {
+      width: 100%;
     }
   }
 }

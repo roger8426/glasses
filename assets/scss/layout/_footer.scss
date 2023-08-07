@@ -2,69 +2,146 @@
   background: #AA0601;
   color: white;
 
-  .footer-bar {
-    padding-top: 48px;
-    padding-bottom: 24px;
+  a {
+    color: #fff;
+  }
+}
+
+.footer-bar {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
     display: flex;
-    justify-content: space-between;
+  }
+
+  ul:nth-child(1) {
+    li {
+      padding: 0 24px;
+    }
+
+    li:nth-child(1) {
+      padding-left: 0;
+    }
+
+    li:nth-child(5) {
+      padding-right: 0;
+    }
+  }
+
+  ul:nth-child(2) {
+    img {
+      width: 48px;
+      height: 48px;
+    }
+
+    li:nth-child(2) {
+      padding: 0 32px;
+    }
+  }
+}
+
+.contact-mobile ul {
+  display: none;
+}
+
+.contact-info {
+  padding-bottom: 32px;
+
+  div {
+    display: flex;
+    font-size: 36px;
     align-items: center;
 
-    ul {
-      display: flex;
+    span {
+      font-size: 36px;
+      margin-right: 22px;
     }
+  }
 
-    ul:nth-child(1) {
-      margin: 0 -24px;
+  div:nth-child(1) {
+    margin-bottom: 8px;
+  }
+}
 
-      li {
-        padding: 0 24px;
-      }
+.policy {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  border-top: 1px solid white;
+
+  ul {
+    display: flex;
+    margin: 0 -24px;
+    font-size: 14px;
+
+    li {
+      padding: 0 24px;
     }
+  }
+}
 
+@media(max-width: 768px) {
+  .footer-bar {
     ul:nth-child(2) {
-      margin: 0 -16px;
-
-      img {
-        height: 48px;
-        width: 48px;
-      }
-
-      li {
+      li:nth-child(2) {
         padding: 0 16px;
       }
     }
   }
+}
 
-  .contact-info {
-    padding-bottom: 32px;
-    margin: -4px 0;
-    border-bottom: 1px solid white;
+@media(max-width: 375px) {
+  .footer-bar {
+    padding: 12px 0;
+
+    ul {
+      display: none;
+    }
+  }
+
+  .contact-mobile {
+    display: flex;
+    justify-content: space-between;
 
     div {
-      display: flex;
-      font-size: 36px;
-      align-items: center;
-      padding: 4px 0;
+      font-size: 16px;
 
       span {
-        font-size: 36px;
-        margin-right: 22px;
+        font-size: 18px;
+        margin-right: 11px;
+      }
+    }
+
+    ul {
+      display: flex;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      li:nth-child(2) {
+        margin: 0 8px;
       }
     }
   }
 
   .policy {
-    display: flex;
-    justify-content: space-between;
-    padding: 32px 0;
+    flex-direction: column;
+
+    p {
+      margin-bottom: 8px;
+    }
 
     ul {
-      display: flex;
-      margin: 0 -24px;
-      font-size: 14px;
+      flex-direction: column;
 
-      li {
-        padding: 0 24px;
+      li:nth-child(1) {
+        margin-bottom: 8px;
       }
     }
   }

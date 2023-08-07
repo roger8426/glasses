@@ -6,9 +6,18 @@
     li {
         width: 33%;
         text-align: center;
-        padding: 24px 0;
         border-left: solid 1px #DCDCDC;
         border-right: solid 1px #DCDCDC;
+    }
+
+    a {
+        color: #000;
+        display: block;
+        padding: 24px 0;
+    }
+
+    .active {
+        border-bottom: 8px solid #AA0601;
     }
 }
 
@@ -93,8 +102,21 @@
         color: #555555;
 
         li {
-            padding: 10px 16px;
             border: 1px solid #555555;
+        }
+    }
+
+    a {
+        color: #555555;
+        display: block;
+        padding: 10px 16px;
+    }
+
+    .active {
+        background: #000;
+
+        a {
+            color: #fff;
         }
     }
 }

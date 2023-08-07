@@ -1,0 +1,32 @@
+.blog-nav-bg {
+    background: #650300;
+}
+
+.blog-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    a {
+        color: #fff;
+        display: block;
+        padding: 13px 24px;
+    }
+
+    li:nth-child(1) a {
+        padding-left: 0;
+    }
+
+    li:nth-child(4) a {
+        padding-right: 0;
+    }
+}
