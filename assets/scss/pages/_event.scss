@@ -50,6 +50,7 @@
 
         img {
             width: 100%;
+            height: auto;
             margin-bottom: 8px;
         }
     }
@@ -58,7 +59,6 @@
         display: flex;
         padding-bottom: 20px;
         margin-bottom: 20px;
-        border-bottom: solid 2px #00000029;
 
         img {
             height: 24px;
@@ -74,6 +74,72 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 80px;
+        padding-top: 24px;
+        border-top: solid 2px #00000029;
+
+        div a {
+            display: flex;
+            color: #000;
+        }
+
+        div:nth-child(1) p {
+            margin-left: 12px;
+        }
+
+        div:nth-child(2) p {
+            margin-right: 12px;
+        }
+    }
+
+    .side-tag {
+        width: 32%;
+        font-weight: bold;
+        color: #AA0601;
+
+        div {
+            display: flex;
+
+            span {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 32px;
+            }
+        }
+
+        li {
+            display: inline;
+
+            a:nth-child(odd) {
+                margin-right: 24px;
+            }
+        }
+
+        a {
+            font-size: 24px;
+            color: #AA0601;
+        }
+    }
+}
+
+.pad-switch {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .event {
+        .switch {
+            display: none;
+        }
+    }
+
+    .pad-switch {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        padding-top: 24px;
+        border-top: solid 2px #00000029;
 
         div a {
             display: flex;
@@ -90,33 +156,30 @@
     }
 }
 
-.side-tag {
-    width: 32%;
-    font-weight: bold;
-    color: #AA0601;
+@media(max-width: 375px) {
+    .event {
+        .event-side {
+            width: 100%;
 
-    div {
-        display: flex;
+            h1 {
+                font-size: 24px;
+            }
 
-        span {
-            font-size: 48px;
+            h2 {
+                font-size: 16px;
+            }
         }
 
-        p {
-            font-size: 32px;
+        .share {
+            display: none;
         }
-    }
 
-    li {
-        display: inline;
-
-        a:nth-child(odd) {
-            margin-right: 24px;
+        .side-tag {
+            display: none;
         }
     }
 
-    a {
-        font-size: 24px;
-        color: #AA0601;
+    .pad-switch {
+        display: none;
     }
 }

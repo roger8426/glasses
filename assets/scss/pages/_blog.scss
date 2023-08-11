@@ -1,4 +1,6 @@
 .blog {
+    margin-bottom: 124px;
+
     h1 {
         font-size: 48px;
         border-left: 8px solid #9F1213;
@@ -9,7 +11,7 @@
     }
 }
 
-.content {
+.blog-content li {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
@@ -19,18 +21,18 @@
         height: auto;
     }
 
+    h2 {
+        font-size: 32px;
+        color: #650300;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
     .blog-text {
-        width: 45%;
+        width: 49%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-        h2 {
-            font-size: 32px;
-            color: #650300;
-            text-align: left;
-            margin-bottom: 0;
-        }
 
         .title-eng {
             display: flex;
@@ -54,7 +56,90 @@
             font-weight: bold;
         }
     }
+
+    .pad-more {
+        display: none;
+    }
+
+    .mobile-blog {
+        display: none;
+    }
 }
+
 .content:last-child {
     margin-bottom: 124px;
+}
+
+@media(max-width: 768px) {
+    .blog {
+        margin-bottom: 80px;
+
+        h1 {
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .blog-content li {
+        margin-bottom: 24px;
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        .pad-hide {
+            display: none;
+        }
+
+        .more {
+            display: none;
+        }
+
+        .pad-more {
+            display: inline;
+            color: #000;
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .blog {
+        margin-bottom: 64px;
+
+        h1 {
+            margin-top: 40px;
+            margin-bottom: 24px;
+            font-size: 24px;
+        }
+    }
+
+    .blog-content li {
+        flex-direction: column;
+
+        .blog-text {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .mobile-blog {
+            display: block;
+            margin-top: 8px;
+
+            div {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .page {
+        margin-bottom: 64px;
+    }
 }

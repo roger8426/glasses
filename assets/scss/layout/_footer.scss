@@ -75,11 +75,10 @@
 
   ul {
     display: flex;
-    margin: 0 -24px;
     font-size: 14px;
 
-    li {
-      padding: 0 24px;
+    li:nth-child(2) {
+      padding-left: 24px;
     }
   }
 }
@@ -142,6 +141,10 @@
 
       li:nth-child(1) {
         margin-bottom: 8px;
+      }
+
+      li:nth-child(2) {
+        padding: 0;
       }
     }
   }
