@@ -16,10 +16,10 @@
 
   a {
     color: #fff;
-  }
 
-  a:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   ul {
@@ -44,31 +44,39 @@
   display: none;
 }
 
-@media(max-width: 767px) {
+@media(max-width: 768px) {
   .nav ul li {
     padding: 0 32px;
   }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 576px) {
   .nav {
     padding: 16px 0;
   }
+
   .nav ul {
     display: none;
   }
+
   .nav-mobile {
     display: flex;
     flex-wrap: wrap;
+
     li {
       width: 50%;
     }
+
     a {
       display: block;
       color: #fff;
       text-align: center;
       padding: 12px 0;
       border: solid 1px #fff;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

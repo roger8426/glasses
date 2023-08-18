@@ -19,6 +19,7 @@
     img {
         width: 49%;
         height: auto;
+        object-fit: cover;
     }
 
     h2 {
@@ -44,6 +45,11 @@
 
         .date {
             font-size: 16px;
+            color: #000;
+        }
+
+        p {
+            color: #555555;
         }
     }
 
@@ -106,7 +112,7 @@
     }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 576px) {
     .blog {
         margin-bottom: 64px;
 

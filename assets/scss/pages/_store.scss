@@ -8,16 +8,15 @@
 }
 
 .area {
-    width: 32%;
     display: flex;
-    justify-content: space-between;
 
     p {
         font-size: 24px;
+        margin-right: 8px;
     }
 
     select {
-        width: 74%;
+        width: 24%;
     }
 }
 
@@ -25,12 +24,12 @@
     padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 32px;
 }
 
 .store-info {
     width: 32%;
-    padding: 0 12px;
     margin-bottom: 48px;
 
     h2,
@@ -72,14 +71,6 @@
     a:visited {
         color: white;
     }
-}
-
-.store-info:nth-child(3n+1) {
-    padding-left: 0;
-}
-
-.store-info:nth-child(3n+3) {
-    padding-right: 0;
 }
 
 .branch {
@@ -155,6 +146,7 @@
 
         img {
             width: 48%;
+            object-fit: cover;
         }
 
         div {
@@ -169,7 +161,7 @@
     }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 576px) {
     .store-title {
         h1 {
             font-size: 24px;

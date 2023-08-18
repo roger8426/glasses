@@ -14,6 +14,10 @@
         color: #000;
         display: block;
         padding: 24px 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     .active {
@@ -108,20 +112,21 @@
     }
 }
 
+.sun-list li {
+    width: 32%;
+}
+
 .page {
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
 
     ul {
-        width: 30%;
-        font-size: 19px;
+        font-size: 18px;
         display: flex;
         justify-content: space-between;
-        color: #555555;
 
         li {
-            width: 100%;
             border: 1px solid #555555;
         }
     }
@@ -130,12 +135,12 @@
         color: #555555;
         display: block;
         text-align: center;
-        padding: 12px 0;
+        padding: 12px 16px;
     }
 
     .pre,
     .next {
-        width: 81px;
+        font-size: 19px;
     }
 
     .active {
@@ -144,6 +149,12 @@
         a {
             color: #fff;
         }
+    }
+}
+
+@media(max-width: 992px) {
+    .pro-list li {
+        width: 48%;
     }
 }
 
@@ -160,17 +171,9 @@
     .optical-img-mobile {
         display: flex;
     }
-
-    .pro-list li {
-        width: 48%;
-    }
-
-    .page ul {
-        width: 55%;
-    }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 576px) {
     .pro-title h1 {
         margin-top: 40px;
     }
@@ -184,7 +187,19 @@
     }
 
     .page ul {
-        width: 100%;
         font-size: 16px;
+
+        li {
+            width: 40px;
+
+            a {
+                padding: 12px 0;
+            }
+        }
+
+        .pre,
+        .next {
+            width: 75px;
+        }
     }
 }

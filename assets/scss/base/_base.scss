@@ -5,11 +5,17 @@ body {
         display: block;
     }
 
-    font-family: 'Noto Sans TC',
+    font-family: "Roboto",
+    'Noto Sans TC',
     sans-serif;
-    box-sizing: border-box;
 
     a {
         text-decoration: none;
     }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
